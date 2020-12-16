@@ -27,6 +27,7 @@ function makeGrid(dim) {
     }
 }
 
+//make every square become a cat
 cats.addEventListener('mousedown', () => {
     let ans = prompt("New Grid Size... (int between 1 and 100)");
     console.log(ans);
@@ -49,6 +50,7 @@ cats.addEventListener('mousedown', () => {
                 squares[i].setAttribute('style','background: url("https://i.pinimg.com/originals/7b/cf/a9/7bcfa90fae6e8227f0664a503fb4bc08.jpg"); background-size: cover');
             });
         }
+    size = ans;
     }
 });
 //squares[50].setAttribute('style', `background: url("https://i.pinimg.com/originals/7b/cf/a9/7bcfa90fae6e8227f0664a503fb4bc08.jpg"); background-size: cover; grid-area: ${1}/${Math.ceil(size/12)}/${Math.round(size/12)}/${2 * Math.ceil(size/12)}`);
@@ -77,3 +79,12 @@ function test(e) {
 }
 rainbowButton.addEventListener('click', test);
 
+function assignBackground(event) {
+    switch(event.target.dataset.color) {
+        case 'black':
+            
+    }
+}
+
+
+buttons.forEach
